@@ -46,27 +46,19 @@
 
     /* HERO */
     #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; padding-top: 80px; }
-
     .hero-left { display: flex; flex-direction: column; justify-content: center; padding: 6rem 4rem 6rem 6rem; border-right: 1px solid var(--line); }
-
     .hero-tag { font-family: 'DM Mono', monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.18em; color: var(--accent); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem; }
     .hero-tag::before { content: ''; display: inline-block; width: 24px; height: 1px; background: var(--accent); }
-
     .hero-name { font-size: clamp(3.2rem, 6vw, 5.5rem); line-height: 1.05; letter-spacing: -0.03em; margin-bottom: 1.5rem; }
     .hero-name em { font-style: italic; color: var(--accent); }
-
     .hero-tagline { font-size: 1.05rem; color: var(--muted); max-width: 420px; margin-bottom: 3rem; line-height: 1.8; }
-
     .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
-
     .btn-primary { background: var(--ink); color: white; padding: 0.85rem 2rem; text-decoration: none; font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; transition: background 0.2s, transform 0.2s; display: inline-block; cursor: pointer; border: none; }
     .btn-primary:hover { background: var(--accent); transform: translateY(-2px); }
-
     .btn-outline { border: 1px solid var(--ink); color: var(--ink); padding: 0.85rem 2rem; text-decoration: none; font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; display: inline-block; cursor: pointer; background: transparent; }
     .btn-outline:hover { background: var(--ink); color: white; transform: translateY(-2px); }
 
     .hero-right { display: flex; flex-direction: column; justify-content: flex-end; padding: 6rem 5rem 5rem 4rem; }
-
     .stat-row { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
     .stat-row:last-child { border-bottom: 1px solid var(--line); }
     .stat-item { padding: 2rem 1.5rem; border-right: 1px solid var(--line); }
@@ -74,28 +66,25 @@
     .stat-num { font-family: 'DM Serif Display', serif; font-size: 3rem; line-height: 1; color: var(--ink); margin-bottom: 0.4rem; }
     .stat-num span { color: var(--accent); }
     .stat-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
-
     .location-bar { padding: 1.5rem; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; }
     .location-bar .mono { font-size: 0.75rem; color: var(--muted); letter-spacing: 0.08em; }
-
     .status-dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; display: inline-block; margin-right: 6px; animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1}50%{opacity:0.3} }
 
     /* SECTIONS */
     section { padding: 7rem 6rem; border-top: 1px solid var(--line); }
-
     .section-label { font-family: 'DM Mono', monospace; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--accent); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.75rem; }
     .section-label::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--accent); }
-
     .section-title { font-size: clamp(2.2rem, 4vw, 3.5rem); letter-spacing: -0.03em; line-height: 1.1; margin-bottom: 4rem; max-width: 600px; }
 
     /* EXPERIENCE */
     #experience { background: var(--card); }
-
     .exp-item { display: grid; grid-template-columns: 220px 1fr; border-top: 1px solid var(--line); padding: 3rem 0; gap: 3rem; }
     .exp-item:first-child { border-top: none; }
     .exp-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 0.5rem; }
-    .exp-company { font-family: 'DM Mono', monospace; font-size: 0.8rem; font-weight: 500; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; }
+    .exp-company { font-family: 'DM Mono', monospace; font-size: 0.8rem; font-weight: 500; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.3rem; }
+    .exp-type { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.3rem; }
+    .exp-tools { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: #999; letter-spacing: 0.04em; line-height: 1.6; margin-top: 0.5rem; }
     .exp-title { font-family: 'DM Serif Display', serif; font-size: 1.6rem; letter-spacing: -0.02em; margin-bottom: 1rem; line-height: 1.2; }
     .exp-desc { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.8; }
     .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
@@ -108,7 +97,6 @@
     #skills .section-label { color: var(--accent); }
     #skills .section-title { color: white; }
     #skills .section-label::before { background: var(--accent); }
-
     .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid rgba(255,255,255,0.1); }
     .skill-group { padding: 2.5rem; border-right: 1px solid rgba(255,255,255,0.1); border-bottom: 1px solid rgba(255,255,255,0.1); }
     .skill-group:nth-child(3n) { border-right: none; }
@@ -120,7 +108,6 @@
 
     /* PROJECTS */
     #projects { background: white; }
-
     .projects-grid { display: grid; grid-template-columns: 1fr 1fr; border: 1px solid var(--line); }
     .project-card { padding: 3rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background 0.2s; position: relative; overflow: hidden; }
     .project-card:nth-child(2n) { border-right: none; }
@@ -230,7 +217,7 @@
     <div class="hero-left">
       <div class="hero-tag">Supply Chain Data Analyst · Mississauga, ON</div>
       <h1 class="hero-name">Ayush<br/><em>Ashokan</em></h1>
-      <p class="hero-tagline">5+ years turning supply chain complexity into measurable outcomes — from demand forecasting and inventory optimization to cross-border logistics and data-driven procurement strategy.</p>
+      <p class="hero-tagline">5+ years of end-to-end supply chain experience across logistics coordination, cross-border compliance, inventory control, and data analysis — driving measurable outcomes across Canada and the USA.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn-primary">View Projects</a>
         <button class="btn-outline" onclick="openModal()">Get in Touch</button>
@@ -243,18 +230,18 @@
           <div class="stat-label">Years Experience</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">18<span>%</span></div>
-          <div class="stat-label">Cost Reduction Delivered</div>
+          <div class="stat-num">30<span>%</span></div>
+          <div class="stat-label">Delivery Delays Reduced</div>
         </div>
       </div>
       <div class="stat-row">
         <div class="stat-item">
-          <div class="stat-num">30<span>%</span></div>
-          <div class="stat-label">Delivery Delays Reduced</div>
+          <div class="stat-num">95<span>%</span></div>
+          <div class="stat-label">Supplier On-Time Delivery</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">99<span>%</span></div>
-          <div class="stat-label">On-Time Delivery Rate</div>
+          <div class="stat-num">20<span>%</span></div>
+          <div class="stat-label">Inventory Discrepancies Cut</div>
         </div>
       </div>
       <div class="location-bar">
@@ -269,57 +256,86 @@
     <div class="section-label">Professional Experience</div>
     <h2 class="section-title">Where I've created <em style="font-style:italic; color:var(--accent)">impact</em></h2>
 
+    <!-- Chudleigh's -->
     <div class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-date">Feb 2023 – Present</div>
-        <div class="exp-company">Sandy Shore Farms</div>
+        <div class="exp-date">Mar 2026 – Apr 2026</div>
+        <div class="exp-company">Chudleigh's Ltd.</div>
+        <div class="exp-type">Contract</div>
+        <div class="exp-tools">Outlook · D365 · Advanced Excel · Power BI · SPS Commerce · BCB International · Bartender · FSVP Portal · CHEP Portal</div>
       </div>
       <div>
         <h3 class="exp-title">Logistics Coordinator</h3>
-        <p class="exp-desc">Overseeing end-to-end logistics for 15M+ lbs of produce annually distributed across Canada and the USA — managing routing, dispatch, customs compliance, and warehouse operations.</p>
+        <p class="exp-desc">Managed inbound and outbound shipment coordination, full customs documentation, and carrier compliance for a high-volume food manufacturer distributing across Canada and the USA.</p>
         <ul class="exp-bullets">
-          <li>Managed storage and logistics for <strong>5M lbs asparagus, 10M lbs peppers</strong> and 60,000 lbs onions daily</li>
-          <li>Planned and scheduled daily routes using <strong>Samsara TMS + TransPlus FleetManager</strong>, reducing delivery delays by <strong>30%</strong></li>
-          <li>Conducted weekly inventory & sales analysis using <strong>PivotTables and XLOOKUP</strong>, driving data-backed replenishment decisions</li>
-          <li>Prepared full cross-border documentation: BOL, PODs, CBSA declarations, HS classification, Certificates of Origin</li>
-          <li>Negotiated shipper-carrier contracts and implemented <strong>5S Lean Methodology</strong>, cutting warehouse discrepancies by <strong>20%</strong></li>
-          <li>Presented monthly logistics cost analysis to the supply chain leadership team</li>
+          <li>Coordinated daily pickup and delivery appointments for inbound/outbound shipments across Canada and the USA</li>
+          <li>Prepared full shipment documentation: <strong>BOL, Commercial Invoice, Proforma/BCB, CUSMA/USMCA, ASNs, FSVP, Bioterrorism documents</strong></li>
+          <li>Analyzed production reports and collaborated with planners to determine carrier requirements; dispatched carrier loads accordingly</li>
+          <li>Performed bin-to-bin transactions, reconciled inventory with <strong>3PL</strong>, and inputted inventory into RECV at third-party warehouse</li>
+          <li>Maintained weekly <strong>CHEP pallet management</strong>; followed up with third-party warehouses for pick reservations to generate ASNs</li>
+          <li>Conducted monthly <strong>BRC carrier audits</strong>; audited DTA payments semi-monthly; supported carrier onboarding</li>
         </ul>
       </div>
     </div>
 
+    <!-- Sandy Shore Farms -->
     <div class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-date">Apr 2022 – Nov 2022</div>
-        <div class="exp-company">Karthika Enterprises</div>
+        <div class="exp-date">Feb 2025 – Feb 2026</div>
+        <div class="exp-company">Sandy Shore Farms</div>
+        <div class="exp-type">Contract</div>
+        <div class="exp-tools">Outlook · TransPlus FleetManager · Samsara · DAT · Loadlink · Advanced Excel · CTPAT Portal · WSIB Portal</div>
       </div>
       <div>
-        <h3 class="exp-title">Buyer / Procurement Specialist</h3>
-        <p class="exp-desc">Executed high-volume procurement operations across HQ, 3PL warehouse, and retail chain networks using Oracle ERP, maintaining supply continuity and vendor data integrity.</p>
+        <h3 class="exp-title">Logistics Coordinator</h3>
+        <p class="exp-desc">Oversaw end-to-end cross-border distribution for high-volume perishable produce across Canada and the USA — managing routing, dispatch, customs compliance, and warehouse operations.</p>
         <ul class="exp-bullets">
-          <li>Executed <strong>40–60 purchase & production orders daily</strong> in Oracle ERP with 98%+ inventory accuracy</li>
-          <li>Performed 3-way matching (PO / invoice / receipt) to identify and resolve discrepancies proactively</li>
-          <li>Managed vendor master data: pricing, lead times, payment terms, currency; coordinated RMAs and credit memos</li>
-          <li>Supported <strong>S&OP budgeting and forecasting</strong>, reducing stock-outs by <strong>12%</strong></li>
-          <li>Led monthly excess inventory reviews and escalated aged stock risks to Sales & Marketing</li>
+          <li>Coordinated pickup and delivery appointments and dispatched carrier loads daily using <strong>Samsara and TransPlus FleetManager</strong>, improving on-time deliveries by <strong>~30%</strong></li>
+          <li>Managed full cross-border documentation: <strong>BOL, Commercial/Proforma Invoices, import permits, CUSMA, ASNs, Certificates of Origin, INCOTERMS, HS Codes, DG/HazMat</strong></li>
+          <li>Supervised warehouse operations (receiving, shipping, returns, damaged goods) and completed invoicing approval and 3PL inventory reconciliation, reducing discrepancies by <strong>20%</strong></li>
+          <li>Conducted weekly inventory and sales analysis using <strong>PivotTables and XLOOKUP</strong>, providing replenishment recommendations to the production team</li>
+          <li>Negotiated shipper-carrier contracts; implemented <strong>5S Lean Methodology</strong> to enhance operational efficiency</li>
         </ul>
       </div>
     </div>
 
+    <!-- Carfax Co-op -->
     <div class="exp-item reveal">
       <div class="exp-meta">
-        <div class="exp-date">Jan 2020 – Mar 2022</div>
-        <div class="exp-company">Karthika Enterprises</div>
+        <div class="exp-date">Sep 2024 – Dec 2024</div>
+        <div class="exp-company">Carfax Canada</div>
+        <div class="exp-type">Co-op / Internship</div>
+        <div class="exp-tools">Excel · Power BI · IntelliJ · AWS (S3, Lambda) · DataGrip · Visual Studio Code</div>
       </div>
       <div>
-        <h3 class="exp-title">Operations Analyst</h3>
-        <p class="exp-desc">Drove data-led efficiency improvements across the end-to-end supply chain — from supplier performance monitoring to demand planning and KPI reporting.</p>
+        <h3 class="exp-title">Data Mapping Specialist</h3>
+        <p class="exp-desc">Worked within the data engineering function to standardize and validate vehicle repair and accident data from raw sources, improving system accuracy and reporting quality.</p>
         <ul class="exp-bullets">
-          <li>Analyzed end-to-end supply chain data, contributing to <strong>18% operational cost reduction</strong></li>
-          <li>Improved on-time supplier delivery from <strong>88% → 95%</strong> through structured performance monitoring</li>
-          <li>Supported demand planning using historical trends and market data, improving forecast accuracy by <strong>15%</strong></li>
-          <li>Tracked and analyzed KPIs to drive improvement across procurement, logistics, and inventory functions</li>
-          <li>Proactively identified and mitigated risks related to supply chain disruptions, delays, and shortages</li>
+          <li>Standardized vehicle repair and accident data from raw <strong>JSON/XML sources</strong> to ensure consistent and accurate processing across systems</li>
+          <li>Tested and maintained decoding templates using <strong>IntelliJ</strong>, collaborating with QA teams to improve data mapping accuracy and reduce errors</li>
+          <li>Optimized internal templates used for planning, performance monitoring, and data gathering</li>
+          <li>Analyzed and monitored <strong>data quality trends using Power BI and Excel</strong>, identifying discrepancies and supporting continuous improvement in reporting accuracy</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Karthika Enterprises -->
+    <div class="exp-item reveal">
+      <div class="exp-meta">
+        <div class="exp-date">Jan 2020 – Nov 2022</div>
+        <div class="exp-company">Karthika Enterprises</div>
+        <div class="exp-tools">Outlook · Oracle ERP · Advanced Excel · Power BI · SAP</div>
+      </div>
+      <div>
+        <h3 class="exp-title">Supply Chain Specialist</h3>
+        <p class="exp-desc">Drove data-led efficiency improvements across the end-to-end supply chain — from procurement operations and vendor management to demand planning, KPI reporting, and logistics coordination.</p>
+        <ul class="exp-bullets">
+          <li>Executed <strong>40–60 purchase and production orders daily</strong> in Oracle ERP; maintained vendor master data and completed 3PL inventory reconciliation</li>
+          <li>Tracked inventory across <strong>150+ retail locations</strong>; conducted bin-to-bin transactions and tracked warehouse claims</li>
+          <li>Measured supplier performance metrics, improving on-time delivery from <strong>88% → 95%</strong> through trend analysis</li>
+          <li>Improved demand planning and forecasting, increasing <strong>forecast accuracy by 15%</strong></li>
+          <li>Developed KPIs to drive continuous process improvement across procurement and logistics functions</li>
+          <li>Negotiated shipper-carrier contracts and ensured carrier compliance documentation (CTPAT, certificates of insurance) was current</li>
         </ul>
       </div>
     </div>
@@ -334,19 +350,19 @@
         <div class="skill-group-title">ERP & Core Systems</div>
         <div class="skill-tags">
           <span class="skill-tag">SAP S/4 HANA</span>
-          <span class="skill-tag">Oracle NetSuite</span>
           <span class="skill-tag">Oracle ERP</span>
           <span class="skill-tag">MS Dynamics 365</span>
+          <span class="skill-tag">SPS Commerce</span>
         </div>
       </div>
       <div class="skill-group reveal">
         <div class="skill-group-title">Analytics & BI</div>
         <div class="skill-tags">
           <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Tableau</span>
           <span class="skill-tag">Advanced Excel</span>
           <span class="skill-tag">SQL</span>
-          <span class="skill-tag">Kinaxis</span>
+          <span class="skill-tag">AWS S3 / Lambda</span>
+          <span class="skill-tag">DataGrip</span>
         </div>
       </div>
       <div class="skill-group reveal">
@@ -355,18 +371,19 @@
           <span class="skill-tag">TransPlus TMS</span>
           <span class="skill-tag">Samsara</span>
           <span class="skill-tag">LoadLink</span>
-          <span class="skill-tag">Blue Yonder</span>
-          <span class="skill-tag">SAP EWM</span>
+          <span class="skill-tag">DAT</span>
+          <span class="skill-tag">BCB International</span>
         </div>
       </div>
       <div class="skill-group reveal">
-        <div class="skill-group-title">Procurement & Sourcing</div>
+        <div class="skill-group-title">Compliance & Customs</div>
         <div class="skill-tags">
-          <span class="skill-tag">SAP Ariba</span>
-          <span class="skill-tag">Coupa</span>
-          <span class="skill-tag">3-Way Matching</span>
-          <span class="skill-tag">Vendor Master</span>
-          <span class="skill-tag">RFQ/RFP</span>
+          <span class="skill-tag">CUSMA / USMCA</span>
+          <span class="skill-tag">FSVP Portal</span>
+          <span class="skill-tag">CTPAT Portal</span>
+          <span class="skill-tag">CHEP Portal</span>
+          <span class="skill-tag">HS Codes / Incoterms</span>
+          <span class="skill-tag">DG / HazMat</span>
         </div>
       </div>
       <div class="skill-group reveal">
@@ -376,18 +393,18 @@
           <span class="skill-tag">Demand Forecasting</span>
           <span class="skill-tag">5S Lean</span>
           <span class="skill-tag">KPI Reporting</span>
-          <span class="skill-tag">OTIF</span>
+          <span class="skill-tag">3PL Management</span>
           <span class="skill-tag">MRP</span>
         </div>
       </div>
       <div class="skill-group reveal">
-        <div class="skill-group-title">Logistics & Compliance</div>
+        <div class="skill-group-title">Data & Dev Tools</div>
         <div class="skill-tags">
-          <span class="skill-tag">Cross-Border Docs</span>
-          <span class="skill-tag">CBSA Declarations</span>
-          <span class="skill-tag">Incoterms</span>
-          <span class="skill-tag">HS Classification</span>
-          <span class="skill-tag">LTL / FTL</span>
+          <span class="skill-tag">JSON / XML</span>
+          <span class="skill-tag">IntelliJ</span>
+          <span class="skill-tag">Visual Studio Code</span>
+          <span class="skill-tag">PivotTables</span>
+          <span class="skill-tag">XLOOKUP</span>
         </div>
       </div>
     </div>
@@ -403,21 +420,21 @@
         <h3 class="project-title">Transportation & Routing Optimization Dashboard</h3>
         <p class="project-desc">Built a Power BI dashboard to visualize shipment performance, route efficiency, and delay root causes — enabling data-driven dispatch decisions across a live logistics operation.</p>
         <div class="project-tools"><span class="tool-badge">Power BI</span><span class="tool-badge">Samsara TMS</span><span class="tool-badge">Excel</span></div>
-        <div class="project-result">Reduced delivery delays by 40%</div>
+        <div class="project-result">Reduced delivery delays by 30%</div>
       </div>
       <div class="project-card reveal">
         <div class="project-num">Project 02</div>
-        <h3 class="project-title">Freight Cost Reduction Analysis</h3>
-        <p class="project-desc">Analyzed carrier rate data, route utilization, and contract terms to identify cost inefficiencies. Produced an executive-ready report with renegotiation recommendations.</p>
-        <div class="project-tools"><span class="tool-badge">Excel</span><span class="tool-badge">Power BI</span><span class="tool-badge">LoadLink</span></div>
-        <div class="project-result">22% reduction in freight costs achieved</div>
+        <h3 class="project-title">Vehicle Data Mapping & Quality Analysis</h3>
+        <p class="project-desc">Standardized raw JSON/XML vehicle accident and repair data at Carfax Canada, monitoring data quality trends and reducing mapping errors through template optimization.</p>
+        <div class="project-tools"><span class="tool-badge">Power BI</span><span class="tool-badge">Excel</span><span class="tool-badge">IntelliJ</span><span class="tool-badge">AWS</span></div>
+        <div class="project-result">Improved data mapping accuracy & reporting</div>
       </div>
       <div class="project-card reveal">
         <div class="project-num">Project 03</div>
         <h3 class="project-title">Inventory KPI Dashboard — Weekly Cadence</h3>
-        <p class="project-desc">Automated weekly inventory and sales trend analysis using Excel PivotTables and XLOOKUP, tracking stock levels, customer demand patterns, and replenishment signals.</p>
+        <p class="project-desc">Automated weekly inventory and sales trend analysis using Excel PivotTables and XLOOKUP across 150+ retail locations, tracking stock levels and replenishment signals.</p>
         <div class="project-tools"><span class="tool-badge">Excel</span><span class="tool-badge">PivotTables</span><span class="tool-badge">XLOOKUP</span></div>
-        <div class="project-result">Informed weekly production replenishment decisions</div>
+        <div class="project-result">Drove weekly replenishment decisions</div>
       </div>
       <div class="project-card reveal">
         <div class="project-num">Project 04 — In Progress</div>
@@ -465,19 +482,19 @@
     <div class="cert-list">
       <div class="cert-item reveal">
         <div class="cert-icon">🏅</div>
-        <div><div class="cert-name">Supply Chain Management & Analytics — Unilever</div><div class="cert-issuer">Coursera · In Progress</div></div>
+        <div><div class="cert-name">SAP Certified — SAP Ariba Procurement</div><div class="cert-issuer">SAP · In Progress</div></div>
+      </div>
+      <div class="cert-item reveal">
+        <div class="cert-icon">🎯</div>
+        <div><div class="cert-name">CSCMP Certificate — Council of Supply Chain Management Professionals</div><div class="cert-issuer">CSCMP · Completed</div></div>
+      </div>
+      <div class="cert-item reveal">
+        <div class="cert-icon">⚙️</div>
+        <div><div class="cert-name">Six Sigma Green Belt</div><div class="cert-issuer">In Progress</div></div>
       </div>
       <div class="cert-item reveal">
         <div class="cert-icon">📊</div>
         <div><div class="cert-name">Power BI Data Analyst</div><div class="cert-issuer">Microsoft Learn · Planned</div></div>
-      </div>
-      <div class="cert-item reveal">
-        <div class="cert-icon">🗄️</div>
-        <div><div class="cert-name">SQL for Data Analysis</div><div class="cert-issuer">Mode Analytics / W3Schools · In Progress</div></div>
-      </div>
-      <div class="cert-item reveal">
-        <div class="cert-icon">🎯</div>
-        <div><div class="cert-name">CPIM — Certified in Planning & Inventory Management</div><div class="cert-issuer">APICS / ASCM · Planned</div></div>
       </div>
     </div>
   </section>
@@ -515,7 +532,7 @@
     <span class="mono">SUPPLY CHAIN DATA ANALYST · MISSISSAUGA, ONTARIO</span>
   </footer>
 
-  <!-- CONTACT MODAL -->
+  <!-- MODAL -->
   <div class="modal-overlay" id="contactModal" onclick="handleOverlayClick(event)">
     <div class="modal">
       <button class="modal-close" onclick="closeModal()">×</button>
@@ -549,7 +566,6 @@
       document.getElementById('contactModal').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
-
     function closeModal() {
       document.getElementById('contactModal').classList.remove('active');
       document.body.style.overflow = '';
@@ -558,26 +574,20 @@
         document.getElementById('formSuccess').style.display = 'none';
       }, 300);
     }
-
     function handleOverlayClick(e) {
       if (e.target === document.getElementById('contactModal')) closeModal();
     }
-
     function submitForm() {
       const name = document.getElementById('senderName').value.trim();
       const email = document.getElementById('senderEmail').value.trim();
       const message = document.getElementById('senderMessage').value.trim();
-      if (!name || !email || !message) {
-        alert('Please fill in all fields before sending.');
-        return;
-      }
+      if (!name || !email || !message) { alert('Please fill in all fields before sending.'); return; }
       const subject = encodeURIComponent('Portfolio Enquiry from ' + name);
       const body = encodeURIComponent('Hi Ayush,\n\n' + message + '\n\nBest regards,\n' + name + '\n' + email);
       window.location.href = 'mailto:Ayushashokancanada@gmail.com?subject=' + subject + '&body=' + body;
       document.getElementById('formContent').style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
     }
-
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
