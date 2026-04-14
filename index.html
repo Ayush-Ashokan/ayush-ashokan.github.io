@@ -79,17 +79,19 @@
 
     /* EXPERIENCE */
     #experience { background: var(--card); }
-    .exp-item { display: grid; grid-template-columns: 220px 1fr; border-top: 1px solid var(--line); padding: 3rem 0; gap: 3rem; }
+    .exp-item { display: grid; grid-template-columns: 260px 1fr; border-top: 1px solid var(--line); padding: 3rem 0; gap: 4rem; align-items: start; }
     .exp-item:first-child { border-top: none; }
+    .exp-meta { position: sticky; top: 100px; }
     .exp-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 0.5rem; }
     .exp-company { font-family: 'DM Mono', monospace; font-size: 0.8rem; font-weight: 500; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.3rem; }
     .exp-type { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.3rem; }
-    .exp-tools { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: #999; letter-spacing: 0.04em; line-height: 1.6; margin-top: 0.5rem; }
-    .exp-title { font-family: 'DM Serif Display', serif; font-size: 1.6rem; letter-spacing: -0.02em; margin-bottom: 1rem; line-height: 1.2; }
-    .exp-desc { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.8; }
-    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
-    .exp-bullets li { font-size: 0.88rem; color: #333; padding-left: 1.2rem; position: relative; line-height: 1.7; }
-    .exp-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 0.8rem; }
+    .exp-tools { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: #aaa; letter-spacing: 0.04em; line-height: 1.8; margin-top: 0.75rem; border-top: 1px solid var(--line); padding-top: 0.75rem; }
+    .exp-body { max-width: 680px; }
+    .exp-title { font-family: 'DM Serif Display', serif; font-size: 1.6rem; letter-spacing: -0.02em; margin-bottom: 0.8rem; line-height: 1.2; }
+    .exp-desc { color: var(--muted); font-size: 0.92rem; margin-bottom: 1.5rem; line-height: 1.8; }
+    .exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .exp-bullets li { font-size: 0.875rem; color: #333; padding-left: 1.4rem; position: relative; line-height: 1.75; }
+    .exp-bullets li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-size: 0.8rem; top: 0.15rem; }
     .exp-bullets li strong { color: var(--ink); font-weight: 500; }
 
     /* SKILLS */
@@ -264,7 +266,7 @@
         <div class="exp-type">Contract</div>
         <div class="exp-tools">Outlook · D365 · Advanced Excel · Power BI · SPS Commerce · BCB International · Bartender · FSVP Portal · CHEP Portal</div>
       </div>
-      <div>
+      <div class="exp-body">
         <h3 class="exp-title">Logistics Coordinator</h3>
         <p class="exp-desc">Managed inbound and outbound shipment coordination, full customs documentation, and carrier compliance for a high-volume food manufacturer distributing across Canada and the USA.</p>
         <ul class="exp-bullets">
@@ -286,7 +288,7 @@
         <div class="exp-type">Contract</div>
         <div class="exp-tools">Outlook · TransPlus FleetManager · Samsara · DAT · Loadlink · Advanced Excel · CTPAT Portal · WSIB Portal</div>
       </div>
-      <div>
+      <div class="exp-body">
         <h3 class="exp-title">Logistics Coordinator</h3>
         <p class="exp-desc">Oversaw end-to-end cross-border distribution for high-volume perishable produce across Canada and the USA — managing routing, dispatch, customs compliance, and warehouse operations.</p>
         <ul class="exp-bullets">
@@ -307,7 +309,7 @@
         <div class="exp-type">Co-op / Internship</div>
         <div class="exp-tools">Excel · Power BI · IntelliJ · AWS (S3, Lambda) · DataGrip · Visual Studio Code</div>
       </div>
-      <div>
+      <div class="exp-body">
         <h3 class="exp-title">Data Mapping Specialist</h3>
         <p class="exp-desc">Worked within the data engineering function to standardize and validate vehicle repair and accident data from raw sources, improving system accuracy and reporting quality.</p>
         <ul class="exp-bullets">
@@ -326,7 +328,7 @@
         <div class="exp-company">Karthika Enterprises</div>
         <div class="exp-tools">Outlook · Oracle ERP · Advanced Excel · Power BI · SAP</div>
       </div>
-      <div>
+      <div class="exp-body">
         <h3 class="exp-title">Supply Chain Specialist</h3>
         <p class="exp-desc">Drove data-led efficiency improvements across the end-to-end supply chain — from procurement operations and vendor management to demand planning, KPI reporting, and logistics coordination.</p>
         <ul class="exp-bullets">
@@ -508,9 +510,9 @@
       <button class="btn-primary" onclick="openModal()" style="width:fit-content;">Send a Message</button>
     </div>
     <div class="contact-right">
-      <a href="mailto:Ayushashokancanada@gmail.com" class="contact-link">
+      <a href="/cdn-cgi/l/email-protection#d899a1adabb0b9abb0b7b3b9b6bbb9b6b9bcb998bfb5b9b1b4f6bbb7b5" class="contact-link">
         <span class="contact-link-icon">Email</span>
-        <span class="contact-link-text">Ayushashokancanada@gmail.com</span>
+        <span class="contact-link-text"><span class="__cf_email__" data-cfemail="c180b8b4b2a9a0b2a9aeaaa0afa2a0afa0a5a081a6aca0a8adefa2aeac">[email&#160;protected]</span></span>
       </a>
       <a href="https://www.linkedin.com/in/ayushashokan/" target="_blank" class="contact-link">
         <span class="contact-link-icon">LinkedIn</span>
@@ -561,7 +563,7 @@
     </div>
   </div>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     function openModal() {
       document.getElementById('contactModal').classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -591,13 +593,4 @@
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          setTimeout(() => entry.target.classList.add('visible'), i * 80);
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => observer.observe(el));
-  </script>
-</body>
-</html>
+        if (entry.i
