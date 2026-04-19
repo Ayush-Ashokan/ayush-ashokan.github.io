@@ -57,7 +57,6 @@
     .btn-primary:hover { background: var(--accent); transform: translateY(-2px); }
     .btn-outline { border: 1px solid var(--ink); color: var(--ink); padding: 0.85rem 2rem; text-decoration: none; font-family: 'DM Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; transition: all 0.2s; display: inline-block; cursor: pointer; background: transparent; }
     .btn-outline:hover { background: var(--ink); color: white; transform: translateY(-2px); }
-
     .hero-right { display: flex; flex-direction: column; justify-content: flex-end; padding: 6rem 5rem 5rem 4rem; }
     .stat-row { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); }
     .stat-row:last-child { border-bottom: 1px solid var(--line); }
@@ -79,13 +78,20 @@
 
     /* EXPERIENCE */
     #experience { background: var(--card); }
-    .exp-item { display: grid; grid-template-columns: 260px 1fr; border-top: 1px solid var(--line); padding: 3rem 0; gap: 4rem; align-items: start; }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      border-top: 1px solid var(--line);
+      padding: 3rem 0;
+      gap: 4rem;
+      align-items: start;
+    }
     .exp-item:first-child { border-top: none; }
     .exp-meta { position: sticky; top: 100px; }
-    .exp-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 0.5rem; }
-    .exp-company { font-family: 'DM Mono', monospace; font-size: 0.8rem; font-weight: 500; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.3rem; }
-    .exp-type { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--muted); letter-spacing: 0.06em; margin-bottom: 0.3rem; }
-    .exp-tools { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: #aaa; letter-spacing: 0.04em; line-height: 1.8; margin-top: 0.75rem; border-top: 1px solid var(--line); padding-top: 0.75rem; }
+    .exp-date { font-family: 'DM Mono', monospace; font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 0.4rem; }
+    .exp-company { font-family: 'DM Mono', monospace; font-size: 0.8rem; font-weight: 500; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.2rem; }
+    .exp-type { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--muted); letter-spacing: 0.06em; }
+    .exp-tools { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: #aaa; letter-spacing: 0.04em; line-height: 1.8; margin-top: 0.8rem; border-top: 1px solid var(--line); padding-top: 0.8rem; }
     .exp-body { max-width: 680px; }
     .exp-title { font-family: 'DM Serif Display', serif; font-size: 1.6rem; letter-spacing: -0.02em; margin-bottom: 0.8rem; line-height: 1.2; }
     .exp-desc { color: var(--muted); font-size: 0.92rem; margin-bottom: 1.5rem; line-height: 1.8; }
@@ -151,7 +157,6 @@
     .contact-link:hover { color: var(--accent); padding-left: 0.5rem; }
     .contact-link-icon { font-family: 'DM Mono', monospace; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255,255,255,0.3); width: 70px; flex-shrink: 0; }
     .contact-link-text { font-size: 1rem; }
-
     footer { background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08); padding: 2rem 6rem; display: flex; justify-content: space-between; align-items: center; }
     footer .mono { font-size: 0.68rem; color: rgba(255,255,255,0.25); letter-spacing: 0.1em; }
 
@@ -189,6 +194,7 @@
       .hero-right { padding: 3rem 2rem 5rem; }
       section { padding: 5rem 2rem; }
       .exp-item { grid-template-columns: 1fr; gap: 1rem; }
+      .exp-meta { position: static; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
       .projects-grid { grid-template-columns: 1fr; }
       .project-card { border-right: none !important; }
@@ -258,7 +264,6 @@
     <div class="section-label">Professional Experience</div>
     <h2 class="section-title">Where I've created <em style="font-style:italic; color:var(--accent)">impact</em></h2>
 
-    <!-- Chudleigh's -->
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-date">Mar 2026 – Apr 2026</div>
@@ -280,7 +285,6 @@
       </div>
     </div>
 
-    <!-- Sandy Shore Farms -->
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-date">Feb 2025 – Feb 2026</div>
@@ -301,7 +305,6 @@
       </div>
     </div>
 
-    <!-- Carfax Co-op -->
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-date">Sep 2024 – Dec 2024</div>
@@ -321,7 +324,6 @@
       </div>
     </div>
 
-    <!-- Karthika Enterprises -->
     <div class="exp-item reveal">
       <div class="exp-meta">
         <div class="exp-date">Jan 2020 – Nov 2022</div>
@@ -351,61 +353,47 @@
       <div class="skill-group reveal">
         <div class="skill-group-title">ERP & Core Systems</div>
         <div class="skill-tags">
-          <span class="skill-tag">SAP S/4 HANA</span>
-          <span class="skill-tag">Oracle ERP</span>
-          <span class="skill-tag">MS Dynamics 365</span>
-          <span class="skill-tag">SPS Commerce</span>
+          <span class="skill-tag">SAP S/4 HANA</span><span class="skill-tag">Oracle ERP</span>
+          <span class="skill-tag">MS Dynamics 365</span><span class="skill-tag">SPS Commerce</span>
         </div>
       </div>
       <div class="skill-group reveal">
         <div class="skill-group-title">Analytics & BI</div>
         <div class="skill-tags">
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Advanced Excel</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">AWS S3 / Lambda</span>
+          <span class="skill-tag">Power BI</span><span class="skill-tag">Advanced Excel</span>
+          <span class="skill-tag">SQL</span><span class="skill-tag">AWS S3 / Lambda</span>
           <span class="skill-tag">DataGrip</span>
         </div>
       </div>
       <div class="skill-group reveal">
         <div class="skill-group-title">Transportation & WMS</div>
         <div class="skill-tags">
-          <span class="skill-tag">TransPlus TMS</span>
-          <span class="skill-tag">Samsara</span>
-          <span class="skill-tag">LoadLink</span>
-          <span class="skill-tag">DAT</span>
+          <span class="skill-tag">TransPlus TMS</span><span class="skill-tag">Samsara</span>
+          <span class="skill-tag">LoadLink</span><span class="skill-tag">DAT</span>
           <span class="skill-tag">BCB International</span>
         </div>
       </div>
       <div class="skill-group reveal">
         <div class="skill-group-title">Compliance & Customs</div>
         <div class="skill-tags">
-          <span class="skill-tag">CUSMA / USMCA</span>
-          <span class="skill-tag">FSVP Portal</span>
-          <span class="skill-tag">CTPAT Portal</span>
-          <span class="skill-tag">CHEP Portal</span>
-          <span class="skill-tag">HS Codes / Incoterms</span>
-          <span class="skill-tag">DG / HazMat</span>
+          <span class="skill-tag">CUSMA / USMCA</span><span class="skill-tag">FSVP Portal</span>
+          <span class="skill-tag">CTPAT Portal</span><span class="skill-tag">CHEP Portal</span>
+          <span class="skill-tag">HS Codes / Incoterms</span><span class="skill-tag">DG / HazMat</span>
         </div>
       </div>
       <div class="skill-group reveal">
         <div class="skill-group-title">SC Methodologies</div>
         <div class="skill-tags">
-          <span class="skill-tag">S&OP</span>
-          <span class="skill-tag">Demand Forecasting</span>
-          <span class="skill-tag">5S Lean</span>
-          <span class="skill-tag">KPI Reporting</span>
-          <span class="skill-tag">3PL Management</span>
-          <span class="skill-tag">MRP</span>
+          <span class="skill-tag">S&OP</span><span class="skill-tag">Demand Forecasting</span>
+          <span class="skill-tag">5S Lean</span><span class="skill-tag">KPI Reporting</span>
+          <span class="skill-tag">3PL Management</span><span class="skill-tag">MRP</span>
         </div>
       </div>
       <div class="skill-group reveal">
         <div class="skill-group-title">Data & Dev Tools</div>
         <div class="skill-tags">
-          <span class="skill-tag">JSON / XML</span>
-          <span class="skill-tag">IntelliJ</span>
-          <span class="skill-tag">Visual Studio Code</span>
-          <span class="skill-tag">PivotTables</span>
+          <span class="skill-tag">JSON / XML</span><span class="skill-tag">IntelliJ</span>
+          <span class="skill-tag">Visual Studio Code</span><span class="skill-tag">PivotTables</span>
           <span class="skill-tag">XLOOKUP</span>
         </div>
       </div>
@@ -510,9 +498,9 @@
       <button class="btn-primary" onclick="openModal()" style="width:fit-content;">Send a Message</button>
     </div>
     <div class="contact-right">
-      <a href="/cdn-cgi/l/email-protection#d899a1adabb0b9abb0b7b3b9b6bbb9b6b9bcb998bfb5b9b1b4f6bbb7b5" class="contact-link">
+      <a href="mailto:Ayushashokancanada@gmail.com" class="contact-link">
         <span class="contact-link-icon">Email</span>
-        <span class="contact-link-text"><span class="__cf_email__" data-cfemail="c180b8b4b2a9a0b2a9aeaaa0afa2a0afa0a5a081a6aca0a8adefa2aeac">[email&#160;protected]</span></span>
+        <span class="contact-link-text">Ayushashokancanada@gmail.com</span>
       </a>
       <a href="https://www.linkedin.com/in/ayushashokan/" target="_blank" class="contact-link">
         <span class="contact-link-icon">LinkedIn</span>
@@ -563,7 +551,7 @@
     </div>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     function openModal() {
       document.getElementById('contactModal').classList.add('active');
       document.body.style.overflow = 'hidden';
@@ -593,4 +581,13 @@
     const reveals = document.querySelectorAll('.reveal');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
-        if (entry.i
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
